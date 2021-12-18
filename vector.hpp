@@ -409,7 +409,7 @@ namespace sjtu
             for (int i = _size - 1; i >= pos.index; i--)
                 store[i + 1] = store[i];
             _size++;
-            *(store + pos.index) = new T(value); //???*(store[pos.index])
+            store[pos.index] = new T(value); 
             return pos;
         }
         /**
