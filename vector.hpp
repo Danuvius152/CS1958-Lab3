@@ -427,7 +427,7 @@ namespace sjtu
             for (int i = _size - 1; i >= ind; i++)
                 store[i + 1] = store[i];
             _size++;
-            *(store[ind]) = new T(value);
+            store[ind] = new T(value);
             return iterator(this, ind);
         }
         /**
